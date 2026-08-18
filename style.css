@@ -1,0 +1,121 @@
+/* 477-301 Exam 1 — ชื่อ-นามสกุล, รหัสนักศึกษา */
+
+/* กำหนด Box Model ให้คำนวณขนาดง่ายขึ้น */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* กำหนดข้อความและสีพื้นหลังหลัก */
+body {
+    font-family: 'Sarabun', 'Tahoma', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* ส่วน Header */
+header {
+    background-color: #c62828;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #ffcdd2;
+}
+
+/* ส่วน เมนูนำทาง (Nav) */
+nav ul {
+    list-style: none;
+    margin-top: 12px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* จัดกึ่งกลางเนื้อหาหลัก */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* จัดแต่งหัวข้อ */
+h2 {
+    color: #c62828;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #c62828;
+    padding-bottom: 5px;
+}
+
+/* จัดระยะห่างแต่ละ Section ด้วย ID */
+#about, #services, #contact {
+    margin-bottom: 25px;
+}
+
+/* การ์ดสำหรับ About Us (เก็บคะแนนข้อ 4.6) */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+/* Hover Effect แบบธรรมดา ไม่สะดุดตาเกินไป */
+.card:hover {
+    border-color: #c62828;
+    background-color: #fafafa;
+}
+
+/* จัดแต่งรายการเมนู */
+#services ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#services li {
+    margin-bottom: 5px;
+}
+
+/* ส่วน Contact */
+.contact-info {
+    background-color: #ffffff;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* ส่วน Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 14px;
+    color: #666666;
+}
