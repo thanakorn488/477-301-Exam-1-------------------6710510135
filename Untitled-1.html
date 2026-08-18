@@ -60,5 +60,42 @@
             <div class="contact-info">
                 <strong>Email:</strong> <a href="mailto:fastfood44@gmail.com">fastfood44@gmail.com</a>
             </div>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>แบบฟอร์มจองโต๊ะ</legend>
+
+                    
+                    <div class="form-group">
+                        <label for="fullname">ชื่อ-นามสกุล:</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="กรอกชื่อ-นามสกุล">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">เบอร์โทรศัพท์ (10 หลัก):</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="0812345678">
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="booking-date">วันที่ต้องการจอง / รับบริการ:</label>
+                        <input type="date" id="booking-date" name="booking-date" required>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="guests">จำนวนคน (1-10 คน):</label>
+                        <input type="number" id="guests" name="guests" min="1" max="10" value="1">
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="note">ข้อความเพิ่มเติม / หมายเหตุ:</label>
+                        <input type="text" id="note" name="note" placeholder="เช่น ช่วงเวลาที่จะมาใช้บริการ">
+                    </div>
+
+                    <button type="submit">ส่งข้อมูล</button>
+                </fieldset>
+            </form>
+        </section>
         </section>
     </main>
